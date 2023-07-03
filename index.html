@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convide Especial de Alícia Estevam!</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <main>
+        <section>
+            <h1>
+                 Convite Especial
+            </h1>
+            <figure>
+                <img src="assets/carta_amor_green.png" alt="">
+            </figure>
+            <audio id="meuSom" src="assets/SnapInsta.io - Xuxa - Parabéns da Xuxa (Álbum Xou da Xuxa) [Áudio Oficial] (64 kbps).mp3"></audio>
+            <button onclick="openPop()" id="botaoSom">Clique Aqui!</button>
+        </section>
+        <section class="popup" id="popup">
+            <h1> 
+                Venha comemorar  
+                meu Aniversário!
+            </h1>
+            <div>
+                <img src="assets/tinker_20anos.png" alt="">
+            </div>
+            <p id="informacoes">
+                Data: <a>23/07/2023</a> <br>
+                Hora: <a>15:30</a> <br>
+                Local: <a href="https://www.google.com/maps/place/Condom%C3%ADnio+Quatro+Esta%C3%A7%C3%B5es/@-5.8910841,-35.232659,17.25z/data=!4m6!3m5!1s0x7b25615e0bbd9f5:0xf82e8f4baa905648!8m2!3d-5.8912096!4d-35.2308471!16s%2Fg%2F11bc997vm8?entry=ttu" id="link" target="_blank">Condomínio Quatro Estações, 338</a>
+             </p>
+            <div id="forms">
+                <div ><a href="https://docs.google.com/forms/d/e/1FAIpQLSeaE-G5sOrlKvAi9M5Nu8LAtG26kagtVZmh0v2Taa194H-89Q/viewform?usp=sf_link" >Confirme sua Presença aqui!!</a></div>
+            </div>
+            <h2>Traga sua bebida!</h2>
+
+            
+        </section>
+    </main>
+    <script>
+
+        let popup = document.getElementById("popup");
+
+        function openPop(){
+            popup.classList.add("open-popup");
+        }
+
+        var meuAudio = document.getElementById('meuSom');
+        var botaoSom = document.getElementById('botaoSom');
+
+        botaoSom.addEventListener('click', function() {
+        if (meuAudio.paused) {
+            meuAudio.play();
+        } else {
+            meuAudio.pause();
+        }
+        });
+
+    </script>
+</body>
+
+</html>
